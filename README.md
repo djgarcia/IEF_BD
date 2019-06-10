@@ -11,11 +11,11 @@ This software has been proved with seven large real-world datasets such as:
 - HIGGS dataset: 11M instances and 28 attributes. https://archive.ics.uci.edu/ml/datasets/HIGGS
 
 ## Brief benchmark results:
-* IEF_BD has shown to be the best noise filter algorithm, achieving the best accuracy.
+* IEF_BD has shown to be the best performing noise filter algorithm, achieving the best accuracy.
 * IEF_BD can outperform the current best noise filter for Big Data, HME-BD, for all datasets and levels of noise.
 * IEF_BD has also proved to be an effective solution for transforming raw Big Data into Smart Data.
 
-## Example (IFE_BD)
+## Example (IEF_BD)
 
 ```scala
 import org.apache.spark.mllib.feature._
