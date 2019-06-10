@@ -23,7 +23,7 @@ class IEF_BD(val data: RDD[LabeledPoint], k: Int = 4, threshold: Double = 0.5, m
 
       var predictions = finalData.map { l =>
         (l, new Array[Double](k))
-      }.repartition(1024).persist()
+      }.repartition(data.getNumPartitions).persist()
 
       val cvdat = MLUtils.kFold(predictions.map(_._1), k, seed)
 
